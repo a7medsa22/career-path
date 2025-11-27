@@ -79,8 +79,7 @@ An AI-powered platform that helps university students and fresh graduates find t
 - **python-docx** - Word document processing
 
 ### Database
-- **PostgreSQL 15+** - Primary database
-- **pgvector** - Vector similarity search
+- **SQL Server 2019+** - Primary database (or SQL Server Express for development)
 
 ---
 
@@ -136,8 +135,11 @@ CareerGuidancePlatform/
 ### Prerequisites
 
 - **.NET 8 SDK** - [Download](https://dotnet.microsoft.com/download/dotnet/8.0)
+- **SQL Server 2019+** - [Download](https://www.microsoft.com/sql-server/sql-server-downloads) (Express Edition is free)
 - **Node.js 18+** - [Download](https://nodejs.org/)
 - **Python 3.10+** - [Download](https://www.python.org/downloads/)
+- **PostgreSQL 15+** - [Download](https://www.postgresql.org/download/)
+- **PostgreSQL 15+** - [Download](https://www.postgresql.org/download/)
 - **Ollama** - [Install Guide](https://ollama.com/download)
 - **Git** - [Download](https://git-scm.com/)
 
@@ -150,16 +152,25 @@ cd career-guidance-platform
 ```
 
 #### 2. Setup Database
-```bash
-# Create database
-createdb career_guidance
 
-# Run migrations
+**Option A: Using PowerShell Script (Recommended)**
+```bash
+cd database
+.\setup-database.ps1
+```
+
+**Option B: Manual Setup**
+```bash
+# Open SQL Server Management Studio (SSMS)
+# Connect to localhost
+# Open and run: database/init.sql
+# Then run: database/seed-data.sql
+```
+
+**Option C: Using Entity Framework**
+```bash
 cd backend/CareerGuidance.API
 dotnet ef database update
-
-# Seed data (optional)
-psql -d career_guidance -f ../../database/seed-data.sql
 ```
 
 #### 3. Setup Backend (.NET API)
@@ -278,7 +289,7 @@ git push origin feature/your-feature-name
 
 ### Backend (.NET)
 ```env
-ConnectionStrings__DefaultConnection=Host=localhost;Database=career_guidance;Username=postgres;Password=your_password
+ConnectionStrings__DefaultConnection=Server=localhost;Database=CareerGuidance;Trusted_Connection=True;TrustServerCertificate=True;
 JwtSettings__SecretKey=your-secret-key-min-32-chars
 JwtSettings__Issuer=CareerGuidanceAPI
 JwtSettings__Audience=CareerGuidanceClient
