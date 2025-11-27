@@ -1,0 +1,80 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE & Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vs/
+
+# Backend (.NET)
+backend/CareerGuidance.API/bin/
+backend/CareerGuidance.API/obj/
+backend/CareerGuidance.API/*.user
+backend/CareerGuidance.API/appsettings.Development.json
+backend/CareerGuidance.API/appsettings.Production.json
+*.dll
+*.exe
+*.pdb
+
+# AI Service (Python)
+backend/ai-service/venv/
+backend/ai-service/__pycache__/
+backend/ai-service/*.pyc
+backend/ai-service/.pytest_cache/
+backend/ai-service/.env
+
+# Frontend (Next.js)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env.local
+frontend/.env.production.local
+frontend/.env.development.local
+frontend/.vercel
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Uploaded files (CV, etc.)
+backend/CareerGuidance.API/uploads/
+backend/CareerGuidance.API/wwwroot/uploads/
+
+# Secrets & Keys
+*.pem
+*.key
+*.env
+.env.local
+.env.production
+secrets/
+
+# Test coverage
+coverage/
+*.cover
+.coverage
+
+# Package files
+*.nupkg
+*.snupkg
+package-lock.json (optional)
+yarn.lock (optional)
+
+# Docker
+docker-compose.override.yml
