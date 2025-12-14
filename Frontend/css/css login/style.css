@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  text-align: center;
+}
+
+.login-container {
+  text-align: center;
+}
+
+.book-icon {
+  font-size: 48px;
+  color: #2d2dff; 
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-top: 40px;
+  font-size: 30px;
+  color: #333;
+}
+
+/* Login box */
+.login-box {
+  width: 85%;
+  max-width: 380px;
+  background: #fff;
+  padding: 25px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.welcome-text {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  display: block;
+}
+
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px 40px 12px 12px; /* مساحة للعين */
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  height: 48px;              /* تثبيت الارتفاع */
+  box-sizing: border-box;
+}
+
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px; 
+    
+}
+
+.toggle-password {
+    position: absolute;
+    top:57.5%;
+    right:620px;           
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.remember {
+  font-size: 14px;
+}
+
+.forgot {
+  font-size: 14px;
+  color: #7a22ff;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #7a22ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  opacity: 0.9;
+}
+
+.register-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.register-text a {
+  color: #7a22ff;
+  text-decoration: none;
+}
+.i1{
+    font-size: 50px;
+margin-top: 60px;
+color: blue;
+}

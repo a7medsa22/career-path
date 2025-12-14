@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    background: #fff;
+    width: 380px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(45deg, #4a78ff, #2a55ff);
+    border-radius: 10px;
+    margin: 0 auto 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.rules {
+    margin-top: 15px;
+    background: #f7f7f7;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #555;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #006aff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+}

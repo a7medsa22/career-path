@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Change Password</title>
+   <link rel="stylesheet" href="../css/forgetstyle.css ">
+</head>
+<body>
+
+<div class="container">
+    <div class="logo"></div>
+
+    <h2>Change Your Password</h2>
+    <p>Enter a new password below to change your password.</p>
+
+    <form id="passwordForm">
+        
+        <!-- Validation Code -->
+        <label>Validation Code*</label>
+        <input type="text" id="code" placeholder="Enter validation code">
+
+        <!-- New Password -->
+        <label>New password*</label>
+        <input type="password" id="newPass" placeholder="Enter new password">
+
+        <!-- Re-enter -->
+        <label>Re-enter new password*</label>
+        <input type="password" id="rePass" placeholder="Re-enter new password">
+
+        <div class="rules">
+            Your password must contain:
+            <ul>
+                <li id="len">✔ At least 10 characters in length</li>
+            </ul>
+        </div>
+
+        <button type="submit" class="btn">Reset password</button>
+
+        <p id="message"></p>
+    </form>
+</div>
+
+<script src="../js/forget script.js"></script>
+</body>
+</html>
