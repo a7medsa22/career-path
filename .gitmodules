@@ -1,0 +1,3 @@
+[submodule "backend/CareerGuidance.API"]
+	path = backend/CareerGuidance.API
+	url = https://github.com/Ahmedsayed732004444/Career-Path
